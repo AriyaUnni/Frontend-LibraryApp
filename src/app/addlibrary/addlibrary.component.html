@@ -1,0 +1,43 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12"><br>
+
+            <div class="row g-3">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 xxl-12">
+                    <label for="Book Name">Book Name</label>
+                    <input type="text" class="form-control" name="bookname"[(ngModel)]="bookname">
+        
+                </div>
+
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 xxl-12">
+                    <label for="Type">Book Genres</label>
+                 <input type="text" class="form-control" name="bookgenre"[(ngModel)]="bookgenre">
+                </div>
+
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 xxl-12">
+                     <label for=">Author Name">Author Name</label>
+                     <input type="text" class="form-control" name="authorname"[(ngModel)]="authorname" >
+
+                  </div>
+                  <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 xxl-12">
+                    <label for="Publication">Publication</label>
+                    <input type="text" class="form-control" name="publication"[(ngModel)]="publication" >
+
+                 </div>
+                  <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 xxl-12">
+                    <label for="Price">Price</label>
+                    <input type="text" class="form-control" name="price"[(ngModel)]="price">
+
+                 </div>
+
+                
+                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 xxl-12">
+            
+                        
+                       <button class="btn btn-success" [disabled]="status" (click)="readValues()">Submit</button>
+            
+                 </div>
+        </div>
+    </div>
+</div>
